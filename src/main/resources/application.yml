@@ -16,4 +16,4 @@ logging:
   level:
     com.netflix: WARN
     org.springframework.web: WARN
-    com.mycompany: DEBUG
+    com.toystore.ecomm.eureka: DEBUG
