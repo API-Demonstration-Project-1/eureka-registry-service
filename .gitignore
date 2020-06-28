@@ -38,3 +38,5 @@ local.properties
 flows/
 /target/*
 **/*.mflow
+/target/
+.settings/**
