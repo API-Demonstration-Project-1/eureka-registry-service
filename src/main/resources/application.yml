@@ -1,6 +1,13 @@
 #Default port is 8761
 server:
   port: 8761
+#server:
+#  port: 8888
+  ssl:
+     key-store: proarchskeystore.p12
+     key-store-password: proarchs
+     keyStoreType: PKCS12
+     keyAlias: proarchs
 
 eureka:
   client:
@@ -9,11 +16,11 @@ eureka:
   server:
     waitTimeInMsWhenSyncEmpty: 5
   serviceUrl:
-    defaultZone: http://localhost:8761  
+    defaultZone: https://localhost:8761  
 
 #Setting logging levels
 logging:
   level:
     com.netflix: WARN
     org.springframework.web: WARN
-    com.mycompany: DEBUG
+    com.toystore.ecomm.eureka: DEBUG
