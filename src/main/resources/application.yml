@@ -10,13 +10,13 @@ server:
      keyAlias: proarchs
 
 eureka:
+  instance:
+    hostname: localhost
   client:
     registerWithEureka: false
     fetchRegistry: false
-  server:
-    waitTimeInMsWhenSyncEmpty: 5
-  serviceUrl:
-    defaultZone: https://localhost:8761  
+    serviceUrl:
+      defaultZone: https://${eureka.instance.hostname}:${server.port}/eureka/
 
 #Setting logging levels
 logging:
