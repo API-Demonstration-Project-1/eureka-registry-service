@@ -40,3 +40,4 @@ flows/
 **/*.mflow
 /target/
 .settings/**
+*.log
